@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Course</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="nav-logo" href="index.html"> Remember<span>That</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="svg/menu.svg" alt="open Navition" srcset="">
+            <nav>
+                <img id="mobile-cross" class="mobile-exitmenu" src="svg/cross.svg" alt="close navigation">
+                <ul class="first-ul">
+                    <li class="home"> <a href="#">Home</a> </li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="second-ul">
+
+                    <li class="home"> <a href="#">Contact</a> </li>
+                    <li class="Go-Primium"><a href="#">Go PRIMIUM</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="sub-head">It's Nitty &amp; Gritty </p>
+                <h1>A Task That Dosn't Stink</h1>
+                <div class="hero-cta">
+                    <a class="free" href="#">Try for free</a>
+                    <a class="watch-video" href="#">
+                        <img class="watch-video-logo" src="svg/watch.svg" alt="watch a video"> watch a video
+                    </a>
+                </div>
+            </div>
+            <img class="hero-img" src="svg/illustration.svg" alt="illustration">
+        </div>
+
+
+    </section>
+    <section class="featureas-section">
+        <div class="container">
+            <ul class="features-list">
+                <li> <img src="svg/bullet.svg" alt=""> Ultimated task</li>
+                <li> <img src="svg/bullet.svg" alt=""> sms task reminder</li>
+                <li> <img src="svg/bullet.svg" alt=""> confetti explossion upon task complitettino</li>
+                <li> <img src="svg/bullet.svg" alt=""> socuial media inflution </li>
+                <li> <img src="svg/bullet.svg" alt=""> real time colabration</li>
+                <li> <img src="svg/bullet.svg" alt=""> Others osm colabration</li>
+
+            </ul>
+            <img src="svg/holding-phone.jpg" alt="phone holdinng image">
+        </div>
+    </section>
+    <section class="testamonial-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="svg/person.jpg" alt="a persion">
+                    </figure>
+                    <blockquote>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has "</blockquote>
+                    <cite>jane doe</cite>
+                </li>
+                <li>
+                    <figure>
+                        <img src="svg/person.jpg" alt="a persion">
+                    </figure>
+                    <blockquote>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has "</blockquote>
+                    <cite>jane doe</cite>
+                </li>
+                <li>
+                    <figure>
+                        <img src="svg/person.jpg" alt="a persion">
+                    </figure>
+                    <blockquote>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has "</blockquote>
+                    <cite>jane doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="text">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="text">
+                    <label for="massage">Massage</label>
+                    <textarea name="massage" id="massage" cols="30" rows="5"></textarea>
+                    <button class="send-msg" type="submit">Send Masssage</button>
+
+                </form>
+
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866574.25239716!2d76.7132126012253!3d33.44791997046425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38fd86bce37d7139%3A0xc6c2990fdad28ac7!2sLadakh!5e0!3m2!1sen!2sin!4v1616082991414!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        const mobbileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav');
+        mobileExit = document.getElementById('mobile-cross');
+        mobbileBtn.addEventListener('click', () => {
+            document.querySelector('nav').style.display = 'block';
+
+        });
+        mobileExit.addEventListener('click', () => {
+            document.querySelector('nav').style.display = 'none';
+
+        });
+    </script>
+</body>
+
+</html>
